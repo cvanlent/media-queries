@@ -3,18 +3,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Vertical Triggers</title>
+	<title>Pixel Ratio Triggers</title>
 	<style>
 		body {
-				background-color: red;
-				background-image:url("../images/architecture.jpg");
-				/*https://www.pexels.com/photo/panoramic-view-of-city-lit-up-at-night-311012/	*/
-				min-height: 20vh;
+			color:white;
+			background-color: red;
+			background-image:url("images/architecture.jpg");
+			/*https://www.pexels.com/photo/panoramic-view-of-city-lit-up-at-night-311012/	*/
+
+			background-position: center; /* Center the image */
+			background-repeat: no-repeat; /* Do not repeat the image */
+			background-size: cover; /* Resize the background image to cover the entire */
+			
 			}
 
 		body:before{
 			content:"Low Resolution - Night";
-		}
+			}
+
 
 		@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
         only screen and (-o-min-device-pixel-ratio: 3/2),
